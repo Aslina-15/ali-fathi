@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ali-Fathi</title>
+<link rel="icon" href="icon-192.png">
+<style>
+:root{--bg:#FAF6F1;--ink:#2A1510;--mut:#6b564f;--red:#C2331E;--navy:#1F3A78}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;display:flex;flex-direction:column;align-items:center;padding:32px 16px}
+.brand{display:flex;align-items:center;gap:12px;font-family:Georgia,"Times New Roman",serif;font-weight:900;letter-spacing:.06em;font-size:clamp(30px,6vw,48px);margin:8px 0 6px}
+.logo{display:flex;gap:4px}.logo b{display:block;width:9px;height:34px;border-radius:3px}
+p.sub{margin:0 0 32px;color:var(--mut);font-size:17px;text-align:center}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;width:min(980px,100%)}
+@media(max-width:720px){.grid{grid-template-columns:1fr}}
+a.card{position:relative;display:flex;align-items:flex-end;min-height:min(520px,70vh);border-radius:22px;overflow:hidden;text-decoration:none;color:#fff;background:#222 center/cover no-repeat;box-shadow:0 10px 30px rgba(40,20,10,.18);transition:transform .2s,box-shadow .2s}
+a.card:hover,a.card:focus-visible{transform:translateY(-4px);box-shadow:0 16px 40px rgba(40,20,10,.28);outline:none}
+a.card::before{content:"";position:absolute;inset:0;background:linear-gradient(transparent 35%,rgba(15,6,3,.88))}
+.txt{position:relative;padding:26px}
+.tag{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:4px 10px;border-radius:99px;background:rgba(255,255,255,.2);margin-bottom:10px}
+h2{margin:0 0 6px;font-family:Georgia,serif;font-size:30px}
+.txt span.d{display:block;opacity:.9;margin-bottom:16px}
+.btn{display:inline-block;padding:11px 20px;border-radius:12px;font-weight:700;color:#fff}
+.c .btn{background:var(--red)}.o .btn{background:var(--navy)}
+</style></head><body>
+<div class="brand"><span class="logo"><b style="background:#1f7a3d"></b><b style="background:#f2b01e"></b><b style="background:#C2331E"></b></span>ALI-FATHI</div>
+<p class="sub">Choose where you want to go</p>
+<main class="grid">
+<a class="card c" href="customer.html" style="background-image:url(restaurant.jpg?v=5)"><div class="txt"><div class="tag">For guests</div><h2>Customer site</h2><span class="d">Browse restaurants, order food, rate dishes and earn rewards.</span><span class="btn">Open customer site</span></div></a>
+<a class="card o" href="owner.html" style="background-image:url(owner.jpg?v=5)"><div class="txt"><div class="tag">For the owner</div><h2>Owner portal</h2><span class="d">See orders, menu, feedback and sales for your restaurant.</span><span class="btn">Open owner portal</span></div></a>
+</main></body></html>
